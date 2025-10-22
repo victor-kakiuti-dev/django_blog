@@ -1,9 +1,9 @@
-from blog.views import home, contato
+from . import views
 from django.urls import path
 
 
 
 urlpatterns = [
-    path('', home),
-    path('contato/', contato),
+    path('', views.home, name='home'),
+    path('article/<int:id>/', views.article , name='article'),
 ]

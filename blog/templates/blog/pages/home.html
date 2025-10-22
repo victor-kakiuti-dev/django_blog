@@ -1,0 +1,12 @@
+{% include 'blog/partials/head.html' %}
+<body>
+{% include 'blog/partials/header.html' %}
+
+{% for articles in article %}    
+{% include 'blog/partials/article.html' %}
+{% endfor %}
+
+{% include 'blog/partials/footer.html' %}
+
+</body>
+</html>

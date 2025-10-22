@@ -67,19 +67,31 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.links {
+    text-decoration: none;
+}
+
 .post h2 {
     margin-bottom: 10px;
     color: #333;
 }
 
+
 .post p {
     color: #666;
     line-height: 1.5;
+    font-size: 22px;
+}
+
+.article{
+    padding: 50px;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
     text-align: center;
-    color: #999;
+    color: #130202;
 }

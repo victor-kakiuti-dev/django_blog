@@ -1,0 +1,15 @@
+<div class="posts">
+    <div class="post">
+        <a href='{% url 'article' articles.id %}' class='links'>
+            <h2>{{ articles.title }}</h2>
+            <p style='font-size:18px;'>{{ articles.author.first_name }}{{ recipe.author.last_name }}</p>
+            <p>{{ articles.description }}</p>
+        </a>
+    </div>
+</div>
+
+{% if is_detail_page is True %}
+<div class='article'>
+    {{ articles.article|linebreaksbr }}
+</div>
+{% endif %}
